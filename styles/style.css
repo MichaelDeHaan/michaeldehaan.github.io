@@ -1,107 +1,52 @@
 * {
-    font-family: Calibri, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-color: #e9e9e9;
+  color: rgb(71, 71, 71);
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
 }
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-name {
+  font-size: 25px;
+  color: rgb(0, 177, 160);
+  font-weight: bold;
+  display: flex;
+}
+
+.navbar-menu {
+  display: flex;
+  /* margin: 10px 20px 20px 15px; */
+  gap: 30px;
+}
+
+.navbar-item {
+  color: rgb(124, 124, 124);
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-item:hover {
+  color: inherit;
 }
 
 body {
-    /* Overall display */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Change from height to min-height */
-
-    /* Background */
-    background: linear-gradient(to bottom left, #080052, #03001c, #000000, #00110c, #002e22);
-    background-size: cover;
-
-    /* Font */
-    font-size: clamp(1rem, 1.5vw, 2rem);
-
-    /* Add margin to the top and bottom */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-}
-
-nav::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-bottom: 1px solid white;
-    width: 97%;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    margin-right: 10vw;
-    margin-left: 10vw;
-}
-
-nav a:hover {
-    transition: color .5s;
-    color: #0d99ff;
-
+  margin: 10px 20px 20px 15px;
+  padding: 10px;
 }
 
 main {
-    width: 98%;
-    color: white;
+  margin-top: 400px;
 }
 
-.header {
-    /* Color */
-    background-image: linear-gradient(110deg, #0d99ff 0%, #99faf4 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
-    /* Font */
-    font-size: clamp(2rem, 3vw, 4rem);
-}
-
-p {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-}
-
-#welcome {
-    display: grid;
-    justify-items: left;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-#projects {
-    display: grid;
-    justify-items: left;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-#contact {
-    display: grid;
-    justify-items: left;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 2rem;
+article {
+  width: 75%;
+  font-size: 40px;
 }
