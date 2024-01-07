@@ -4,7 +4,6 @@
   background-color: #e9e9e9;
   color: rgb(71, 71, 71);
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
   text-decoration: none;
   list-style: none;
 }
@@ -16,16 +15,15 @@
 }
 
 .navbar-name {
-  font-size: 25px;
   color: rgb(0, 177, 160);
-  font-weight: bold;
+  font-weight: bolder;
   display: flex;
 }
 
 .navbar-menu {
   display: flex;
-  /* margin: 10px 20px 20px 15px; */
-  gap: 30px;
+  justify-content: flex-end;
+  gap: 5%;
 }
 
 .navbar-item {
@@ -37,16 +35,55 @@
   color: inherit;
 }
 
-body {
-  margin: 10px 20px 20px 15px;
-  padding: 10px;
+@media (min-width: 1000px) {
+  body {
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+  }
+
+  nav {
+    font-size: 25px;
+  }
+
+  .navbar-menu {
+    gap: 25%;
+  }
+
+  .navbar-item {
+    font-size: 20px;
+  }
+
+  main {
+    margin-top: 40%;
+  }
+
+  article {
+    width: 75%;
+    font-size: 40px;
+  }
 }
 
-main {
-  margin-top: 400px;
-}
+@media (max-width: 999px) {
+  body {
+    margin: 20px 15px 20px 15px;
+    font-size: 16px;
+  }
 
-article {
-  width: 75%;
-  font-size: 40px;
+  nav {
+    font-size: 16px;
+  }
+
+  .navbar-name {
+    font-size: 20px;
+  }
+
+  main {
+    margin-top: 40%;
+    margin-right: 10%;
+  }
+
+  article {
+    width: 95%;
+    font-size: 20px;
+  }
 }
