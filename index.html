@@ -12,35 +12,35 @@
 </head>
 
 <body>
-
   <nav class="navbar">
-    <a class="navbar-name" href="/index.html">Michael</a>
-    <menu class="navbar-menu">
-      <li><a class="navbar-item" href="/index.html#projects">Projects</a></li>
-      <li><a class="navbar-item" href="/about.html">About</a></li>
-      <li><a class="navbar-item" href="/index.html#footer">Contact</a></li>
-    </menu>
+    <a class="navbar--item navbar__item--name" href="/index.html">Michael</a>
+    <div class="navbar__container">
+      <li><a class="navbar__item" href="/index.html#projects">Projects</a></li>
+      <li><a class="navbar__item" href="/about.html">About</a></li>
+      <li><a class="navbar__item" href="/index.html#footer">Contact</a></li>
+    </div>
   </nav>
 
   <main>
-    <article id="welcome-message">
+    <article class="article article--narrow article--gap">
       Hello. I am Michael DeHaan. <br>
       I'm a Computer Science student at the University of North Carolina
       Greensboro. This is my personal website used to host various projects.
     </article>
 
-    <section id="projects">
-      Projects
-      <article class="project-item">
-        WIP
+    <section class="section section--black">
+      <h2>Projects</h2>
+      <article class="article">
+        <h3 class="text--center">Nutrilog - Current</h3>
+        <p>
+          I am currently working on a food tracking application named Nurilog. It is a Spring Boot application that
+          utilizes the USDA's Food Data Central API to retrieve and process nutritional information about logged food,
+          providing the user with a detailed snapshot of their dietary habits.
+        </p>
       </article>
     </section>
-  </main>
 
-  <footer id="footer">
-    <a class="footer-item" href="">Email</a>
-    <a class="footer-item" href="">LinkedIn</a>
-  </footer>
+  </main>
 </body>
 
 </html>
