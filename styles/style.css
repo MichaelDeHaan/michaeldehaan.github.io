@@ -1,133 +1,29 @@
-@import url(./index.css);
-
 * {
-  margin: 0px;
-  padding: 0px;
-  background-color: #e9e9e9;
-  color: rgb(71, 71, 71);
   font-family: 'Inter', sans-serif;
-  text-decoration: none;
-  list-style: none;
-  /* border: 1px solid; */
+  /* outline: 1px solid; */
 }
 
-/* Elements */
-h1,
-h2,
-h3 {
-  font-size: var(--font-size-d);
+.color-main {
+  background-color: #fffcf7;
 }
 
-@media (max-width: 600px) {
-
-  h1,
-  h2,
-  h3 {
-    font-size: var(--font-size-m);
-  }
+.color-secondary {
+  background-color: #000000;
 }
 
-
-/* Navbar */
-.navbar {
-  padding-left: 1%;
-  padding-right: 1%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 5vh;
+.navbar-toggler {
+  border: none !important;
 }
 
-.navbar__name {
-  color: rgb(0, 177, 160);
-  display: flex;
+.fs-small {
+  font-size: .75em;
 }
 
-.navbar__container {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 10px;
+.fc-grey {
+  color: gray;
 }
 
-.navbar__item {
-  font-size: 20px;
-  color: rgb(124, 124, 124);
-  transition: color 0.2s ease-in-out;
-  display: flex;
-}
-
-.navbar__item--name {
-  font-size: 20px;
-  color: rgb(0, 177, 160);
-}
-
-@media (max-width: 600px) {
-  .navbar__item {
-    font-size: 15px;
-  }
-
-  .navbar__item--name {
-    font-size: 15px;
-  }
-}
-
-.navbar__item:hover {
-  color: inherit;
-}
-
-/* Main Content */
-.article {
-  font-size: var(--font-size-d);
-  padding: var(--padding);
-}
-
-.article--narrow {
-  width: 60%;
-}
-
-.article--gap {
-  padding: var(--padding--extra);
-}
-
-@media (max-width: 600px) {
-  .article {
-    font-size: var(--font-size-m);
-  }
-
-  .article--narrow {
-    width: 90%;
-  }
-}
-
-.section {
-  font-size: var(--font-size-d);
-  padding: var(--padding);
-}
-
-.section * {
-  padding: 1% 0;
-}
-
-.section--black {
-  background-color: black;
-  color: white;
-}
-
-.section--black * {
-  background-color: black;
-  color: white;
-}
-
-/* Misc. */
-.text--center {
-  text-align: center;
-}
-
-/* Variables */
-:root {
-  --padding--extra: 15% 1%;
-  --padding: 0% 1%;
-  --font-size-d: 30px;
-  --font-size-t: 1.5em;
-  --font-size-m: 16px;
+.card {
+  background-color: #000000 !important;
+  border-radius: 25px !important;
 }

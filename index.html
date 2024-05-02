@@ -8,39 +8,99 @@
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@275&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@350&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-<body>
-  <nav class="navbar">
-    <a class="navbar--item navbar__item--name" href="/index.html">Michael</a>
-    <div class="navbar__container">
-      <li><a class="navbar__item" href="/index.html#projects">Projects</a></li>
-      <li><a class="navbar__item" href="/about.html">About</a></li>
-      <li><a class="navbar__item" href="/index.html#footer">Contact</a></li>
+<body class="color-main">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light" fs-5">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-4" id="color-navbar" href="#">Michael</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <main>
-    <article class="article article--narrow article--gap">
-      Hello. I am Michael DeHaan. <br>
-      I'm a Computer Science student at the University of North Carolina
-      Greensboro. This is my personal website used to host various projects.
-    </article>
-
-    <section class="section section--black">
-      <h2>Projects</h2>
-      <article class="article">
-        <h3 class="text--center">Nutrilog - Current</h3>
-        <p>
-          I am currently working on a food tracking application named Nurilog. It is a Spring Boot application that
-          utilizes the USDA's Food Data Central API to retrieve and process nutritional information about logged food,
-          providing the user with a detailed snapshot of their dietary habits.
-        </p>
-      </article>
+  <!-- Homepage Message -->
+  <main class="container-lg">
+    <section class="fs-5 pt-5">
+      <p class="fs-small fc-grey">👨🏻‍💻 Hi, I'm Michael.</p>
+      <p class="fs-4">
+        I'm a Computer Science student at the University of North Carolina
+        Greensboro.
+      </p>
     </section>
 
+    <!-- Projects -->
+    <section class="pt-5">
+      <h1 class="pb-3">Projects</h1>
+      <div class="row align-items-start">
+
+        <!-- Card 1 -->
+        <div class="col-sm-6 pb-5">
+          <div class="card text-bg-dark">
+            <div class="card-body">
+              <!-- Card Title -->
+              <div class="row">
+                <h4 class="card-title col">Project 1</h4>
+                <a class="icon-link icon-link-hover col-auto" href="#">
+                  <img src="./images/github-mark-white.png" alt="" style="height: 25px;">
+                </a>
+              </div>
+              <!-- Card Body -->
+              <p class="card-text pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus quae
+                modi
+                deserunt sapiente! Id, voluptatum vero doloribus hic quam a deserunt, perspiciatis vitae quas
+                perferendis saepe, corporis fugit iste!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-sm-6">
+          <div class="card text-bg-dark">
+            <div class="card-body">
+              <!-- Card Title -->
+              <div class="row">
+                <h4 class="card-title col">Project 2</h4>
+                <a class="icon-link icon-link-hover col-auto" href="#">
+                  <img src="./images/github-mark-white.png" alt="" style="height: 25px;">
+                </a>
+              </div>
+              <!-- Card Body -->
+              <p class="card-text pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus quae
+                modi
+                deserunt sapiente! Id, voluptatum vero doloribus hic quam a deserunt, perspiciatis vitae quas
+                perferendis saepe, corporis fugit iste!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
