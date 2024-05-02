@@ -1,8 +1,26 @@
 * {
   font-family: 'Inter', sans-serif;
-  /* outline: 1px solid; */
 }
 
+/* Override Bootstrap */
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar {
+  background-color: #fffcf7 !important;
+}
+
+.card {
+  background-color: #000000 !important;
+  border-radius: 25px !important;
+}
+
+.pt-6 {
+  padding-top: 5rem !important;
+}
+
+/* Custom */
 .color-main {
   background-color: #fffcf7;
 }
@@ -11,8 +29,8 @@
   background-color: #000000;
 }
 
-.navbar-toggler {
-  border: none !important;
+.height-full {
+  height: 100vh;
 }
 
 .fs-small {
@@ -23,7 +41,73 @@
   color: gray;
 }
 
-.card {
-  background-color: #000000 !important;
-  border-radius: 25px !important;
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.scroll a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.scroll a:hover {
+  opacity: .5;
+  color: rgb(65, 65, 65);
+  transition: 0.3s;
+}
+
+#scroll-arrow a {
+  padding-top: 60px;
+}
+
+#scroll-arrow a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
 }
