@@ -1,5 +1,6 @@
 * {
   font-family: 'Inter', sans-serif;
+  /* border-style: solid; */
 }
 
 /* Override Bootstrap */
@@ -23,18 +24,6 @@
 /* Custom */
 .color-main {
   background-color: #fffcf7;
-}
-
-.color-secondary {
-  background-color: #000000;
-}
-
-.height-full {
-  height: 100vh;
-}
-
-.fs-small {
-  font-size: .75em;
 }
 
 .fc-grey {
