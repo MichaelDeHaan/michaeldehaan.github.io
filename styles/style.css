@@ -69,6 +69,10 @@ section {
   padding-left: 0;
 }
 
+.modal-img {
+  width: 100%;
+}
+
 #brand {
   font-weight: 400;
 }

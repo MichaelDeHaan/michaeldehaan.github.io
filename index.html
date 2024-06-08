@@ -69,20 +69,26 @@
     <!-- Projects -->
     <section class="p-lg-5" id="projects">
       <h2 class="pb-5">Projects</h2>
-      <div class="row align-items-start">
+      <div class="row">
         <!-- Card 1 -->
-        <div class="pb-3">
+        <div class="pb-3 col-md-6">
           <div class="card text-bg-dark">
-            <div class="card-body">
+            <div class="card-body col">
               <!-- Card Title -->
               <div class="row px-1">
                 <h4 class="card-title col">Inventory Management System</h4>
+                <!-- Modal Trigger -->
+                <a class="icon-link icon-link-hover col-auto grow" href="#" onclick="return false;"
+                  data-bs-toggle="modal" data-bs-target="#inventoryProjModal">
+                  <img src=" ./images/image.svg" alt="github icon" style="height: 25px;">
+                </a>
                 <a class="icon-link icon-link-hover col-auto grow" href="https://github.com/MichaelDeHaan/ims">
-                  <img src="./images/github-mark-white.png" alt="" style="height: 25px;">
+                  <img src="./images/github-mark-white.png" alt="github icon" style="height: 25px;">
                 </a>
               </div>
               <!-- Card Body -->
-              <p class="card-text pt-2 ps-1">An inventory managementy web app built using Spring Boot.</p>
+              <p class="card-text pt-2 ps-1">A simple CRUD application for managing business inventory. This project
+                uses Spring Boot with a MySQL database, and Thymeleaf for dynamic page content.</p>
               <div class="container px-1">
                 <div class="row gx-3 fs-small text-center">
                   <div class="col text-nowrap">
@@ -94,7 +100,24 @@
                   <div class="col ">
                     <div class="p-1 border border-info rounded">HTML/CSS/JS</div>
                   </div>
+                  <div class="col ">
+                    <div class="p-1 border border-info rounded">MySQL</div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 1 Modal -->
+        <div class="modal fade" id="inventoryProjModal" tabindex="-1" aria-labelledby="inventoryProjModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="./images/inventory-proj.png" class="modal-img" alt="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
