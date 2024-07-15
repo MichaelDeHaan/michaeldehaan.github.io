@@ -133,3 +133,8 @@ section {
   background-color: #000000 !important;
   border-radius: 25px !important;
 }
+
+.card-img-top {
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+}

@@ -49,7 +49,8 @@
     <section class="p-3 p-lg-5 d-flex flex-column justify-content-center">
       <h1 class="mb-0">Michael DeHaan</h1>
       <h3 class="fs-5">Computer Science Student</h3>
-      <h3 class="fs-6 fc-grey mb-5">Greensboro, NC · <a href="" class="link">michaelrdehaan@gmail.com</a></h3>
+      <h3 class="fs-6 fc-grey mb-5">Greensboro, NC · <a href="mailto:michaelrdehaan@gmail.com"
+          class="link">michaelrdehaan@gmail.com</a></h3>
       <p class="fs-6 mb-5">
         I am software developer completing my senior year at the University of North Carolina, Greensboro.
         <br>
@@ -71,17 +72,13 @@
       <h2 class="pb-5">Projects</h2>
       <div class="row">
         <!-- Card 1 -->
-        <div class="pb-3 col-md-6">
+        <div class="pb-3 col-xxl-6 col-sm-12">
           <div class="card text-bg-dark">
+            <img src="./images/inventory-proj.png" class="card-img-top" alt="">
             <div class="card-body col">
               <!-- Card Title -->
               <div class="row px-1">
                 <h4 class="card-title col">Inventory Management System</h4>
-                <!-- Modal Trigger -->
-                <a class="icon-link icon-link-hover col-auto grow" href="#" onclick="return false;"
-                  data-bs-toggle="modal" data-bs-target="#inventoryProjModal">
-                  <img src=" ./images/image.svg" alt="github icon" style="height: 25px;">
-                </a>
                 <a class="icon-link icon-link-hover col-auto grow" href="https://github.com/MichaelDeHaan/ims">
                   <img src="./images/github-mark-white.png" alt="github icon" style="height: 25px;">
                 </a>
@@ -89,42 +86,13 @@
               <!-- Card Body -->
               <p class="card-text pt-2 ps-1">A simple CRUD application for managing business inventory. This project
                 uses Spring Boot with a MySQL database, and Thymeleaf for dynamic page content.</p>
-              <div class="container px-1">
-                <div class="row gx-3 fs-small text-center">
-                  <div class="col text-nowrap">
-                    <div class="p-1 border border-info rounded">Spring Boot</div>
-                  </div>
-                  <div class="col">
-                    <div class="p-1 border border-info rounded">Java</div>
-                  </div>
-                  <div class="col ">
-                    <div class="p-1 border border-info rounded">HTML/CSS/JS</div>
-                  </div>
-                  <div class="col ">
-                    <div class="p-1 border border-info rounded">MySQL</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 1 Modal -->
-        <div class="modal fade" id="inventoryProjModal" tabindex="-1" aria-labelledby="inventoryProjModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src="./images/inventory-proj.png" class="modal-img" alt="">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Education -->
     <section class="p-lg-5" id="education">
       <h2 class="pb-5">Education</h2>
       <div class="d-flex flex-column">
@@ -146,6 +114,7 @@
       </div>
     </section>
 
+    <!-- Skills -->
     <section class="p-lg-5" id="skills">
       <h2 class="pb-5">Skills</h2>
       <div class="d-flex flex-column">
@@ -162,6 +131,7 @@
       </div>
     </section>
 
+    <!-- Experience -->
     <section class="p-lg-5" id="experience">
       <h2 class="pb-5">Experience</h2>
       <div class="d-flex flex-column">
@@ -204,8 +174,8 @@
   </main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
