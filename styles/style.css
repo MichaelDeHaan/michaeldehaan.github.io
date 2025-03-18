@@ -62,11 +62,11 @@ section {
 
 .list {
   list-style-type: inherit;
+  padding-left: 1rem;
 }
 
 .list-plain {
   text-decoration: none;
-  padding-left: 0;
 }
 
 .modal-img {
@@ -94,6 +94,7 @@ section {
 
 #navbarNav * {
   color: rgb(226, 226, 226);
+  text-align: left;
 }
 
 /* Large Screens */
@@ -103,7 +104,7 @@ section {
     position: fixed;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 15rem;
     height: 100vh;
   }
 
@@ -122,7 +123,13 @@ section {
     padding: 0;
     margin: 0;
   }
+
+  p,
+  li {
+    width: 75%;
+  }
 }
+
 
 /* Override Bootstrap */
 .navbar-toggler {
